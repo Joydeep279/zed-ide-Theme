@@ -1,41 +1,101 @@
 # OneNord for Zed
 
-A beautifully crafted, distraction-free dark theme for the [Zed editor](https://zed.dev/). OneNord seamlessly blends the cool, icy aesthetics of Nord with vibrant, pastel syntax highlights to create a visually soothing environment designed for long coding sessions.
+**A beautifully crafted, distraction-free dark theme for [Zed](https://zed.dev/).**
 
-![OneNord Theme Preview](screenshot.png)
-*(Note: Replace `screenshot.png` with a path to an actual screenshot of your theme in action)*
+OneNord combines the cool, icy atmosphere of Nord with carefully balanced pastel syntax colors to create a clean, cohesive coding environment. Its deep blue-gray background, soft accents, and refined UI colors offer a comfortable visual experience for long coding sessions without sacrificing readability.
+
+Designed for developers who appreciate minimalism, consistency, and thoughtful details.
+
+## Previews
+
+### Code Preview
+
+Get a closer look at OneNord's carefully tuned syntax highlighting.
+
+![OneNord Theme — Code Preview](preview.png)
+
+### Full IDE Preview
+
+Experience the complete theme across the editor, sidebar, terminal, tabs, and other UI elements.
+
+![OneNord Theme — Full IDE Preview](screenshot.png)
 
 ## Features
 
-- **Soothing Dark Background:** Built on a deep blue-gray base (`#2B2F40`) that reduces eye strain while maintaining excellent contrast.
-- **Vibrant Pastel Syntax:** Code comes to life with a carefully tuned array of pastel accents (blues, mauves, greens, and peaches) that make syntax parsing effortless without feeling harsh.
-- **Cohesive UI:** Harmonious color tokens across the sidebar, terminal, status bar, and active editor tabs.
-- **Git & Diff Awareness:** Clear, intuitive color coding for version control (added/modified/deleted) and inline diff highlights.
+- **Deep, Soothing Dark Palette** — A rich blue-gray background (`#2B2F40`) creates a calm workspace with balanced contrast.
+- **Pastel Syntax Highlighting** — Soft blues, mauves, greens, and peach tones distinguish code elements without overwhelming the interface.
+- **Consistent UI Colors** — A cohesive palette across the sidebar, editor tabs, terminal, status bar, and other interface components.
+- **Git & Diff Support** — Distinct colors for added, modified, and deleted lines make version-control changes easier to scan.
+- **Distraction-Free Design** — A restrained color palette keeps the focus on your code while maintaining clear visual hierarchy.
+- **Designed for Long Sessions** — Muted backgrounds and thoughtfully selected accents aim to provide a comfortable coding experience.
 
 ## Installation
 
-### Method 1: Extension Registry (Recommended)
+### Install Locally (Development)
 
-1. Open Zed and open the Extensions panel (`Cmd+Shift+X` on macOS or `Ctrl+Shift+X` on Windows/Linux).
-2. Search for **OneNord**.
-3. Click **Install**.
+To install OneNord directly from its repository:
 
-### Method 2: Local Installation
+1. Clone or download this repository.
+2. Open **Zed**.
+3. Open the Extensions view.
+4. Select **Install Dev Extension** or run `zed: install dev extension` from the Command Palette.
+5. Choose the directory containing the OneNord extension.
 
-To install the theme locally for development or personal tweaking:
-
-1. Clone this repository to your local machine.
-2. Open Zed and open the extensions view.
-3. Click on the **Install Dev Extension** button (or use the `zed: install dev extension` command via the command palette).
-4. Select the directory where you cloned this repository.
+Once installed, the theme will be available in Zed's theme selector.
 
 ## Usage
 
-Once installed, you can switch to the theme by opening the theme selector (`Cmd+K Cmd+T` or `Ctrl+K Ctrl+T`) and selecting **OneNord**. 
+### Activate OneNord
 
-Alternatively, you can set it directly in your Zed `settings.json` (`Cmd+,` or `Ctrl+,`):
+Open the theme selector using:
+
+- **Windows/Linux:** `Ctrl + K`, then `Ctrl + T`
+- **macOS:** `Cmd + K`, then `Cmd + T`
+
+Search for **OneNord** and select it to apply the theme.
+
+### Set as Your Default Theme
+
+You can also set OneNord as your default theme in Zed's `settings.json`.
+
+Open Settings using `Ctrl + ,` on Windows/Linux or `Cmd + ,` on macOS, then add or update the following setting:
 
 ```json
 {
   "theme": "OneNord"
 }
+```
+
+## Color Philosophy
+
+OneNord is built around a simple idea: **a dark interface should feel calm, not dull.**
+
+| Element | Design Direction |
+| --- | --- |
+| Background | Deep blue-gray |
+| Syntax | Soft, expressive pastels |
+| Interface | Consistent and understated |
+| Diff highlights | Clear, meaningful distinctions |
+| Overall feel | Minimal, cool, and comfortable |
+
+## Contributing
+
+Feedback, suggestions, and contributions are welcome!
+
+If you find a visual inconsistency, spot an issue, or have an idea for improving the theme, feel free to open an issue or submit a pull request.
+
+## Feedback
+
+Using OneNord? I'd love to hear what you think.
+
+- Share your feedback and suggestions.
+- Report bugs or color inconsistencies.
+- Suggest improvements to syntax highlighting or UI colors.
+
+## License
+
+See the repository's `LICENSE` file for licensing information.
+
+---
+
+**OneNord for Zed** — *Cool tones. Clear code. Calm focus.*
