@@ -1,24 +1,20 @@
 # OneNord for Zed
 
-**A beautifully crafted, distraction-free dark theme for [Zed](https://zed.dev/).**
+**A beautifully crafted, distraction-free theme for [Zed](https://zed.dev/), available in Dark and Light variants.**
 
-OneNord combines the cool, icy atmosphere of Nord with carefully balanced pastel syntax colors to create a clean, cohesive coding environment. Its deep blue-gray background, soft accents, and refined UI colors offer a comfortable visual experience for long coding sessions without sacrificing readability.
+OneNord combines the cool, icy atmosphere of Nord with carefully balanced pastel syntax colors to create a clean, cohesive coding environment. Its soothing dark and crisp light palettes, soft accents, and refined UI colors offer a comfortable visual experience for long coding sessions without sacrificing readability.
 
 Designed for developers who appreciate minimalism, consistency, and thoughtful details.
 
 ## Previews
 
-### Code Preview
+### Dark Theme
 
-Get a closer look at OneNord's carefully tuned syntax highlighting.
+![OneNord Dark Preview](dark%20preview.png)
 
-![OneNord Theme — Code Preview](preview.png)
+### Light Theme
 
-### Full IDE Preview
-
-Experience the complete theme across the editor, sidebar, terminal, tabs, and other UI elements.
-
-![OneNord Theme — Full IDE Preview](screenshot.png)
+![OneNord Light Preview](light%20preview.png)
 
 ## Features
 
@@ -82,7 +78,7 @@ Open the theme selector:
 - **Windows/Linux:** `Ctrl + K`, then `Ctrl + T`
 - **macOS:** `Cmd + K`, then `Cmd + T`
 
-Search for **OneNord** and select it to apply the theme.
+Search for **OneNord** and select **OneNord Dark** or **OneNord Light** to apply the theme.
 
 ### Set OneNord as Your Default Theme
 
@@ -92,7 +88,19 @@ Open the Settings file through the Command Palette using `zed: open settings fil
 
 ```json
 {
-  "theme": "OneNord"
+  "theme": {
+    "mode": "system",
+    "light": "OneNord Light",
+    "dark": "OneNord Dark"
+  }
+}
+```
+
+Or set a specific variant directly:
+
+```json
+{
+  "theme": "OneNord Dark"
 }
 ```
 
