@@ -26,45 +26,77 @@ Experience the complete theme across the editor, sidebar, terminal, tabs, and ot
 - **Pastel Syntax Highlighting** — Soft blues, mauves, greens, and peach tones distinguish code elements without overwhelming the interface.
 - **Consistent UI Colors** — A cohesive palette across the sidebar, editor tabs, terminal, status bar, and other interface components.
 - **Git & Diff Support** — Distinct colors for added, modified, and deleted lines make version-control changes easier to scan.
-- **Distraction-Free Design** — A restrained color palette keeps the focus on your code while maintaining clear visual hierarchy.
+- **Distraction-Free Design** — A restrained color palette keeps the focus on your code while maintaining a clear visual hierarchy.
 - **Designed for Long Sessions** — Muted backgrounds and thoughtfully selected accents aim to provide a comfortable coding experience.
 
 ## Installation
 
-### Install Locally (Development)
+OneNord is currently distributed as a local JSON theme file. It is not available as a directly installable Zed extension.
 
-To install OneNord directly from its repository:
+### 1. Download the Theme
 
-1. Clone or download this repository.
-2. Open **Zed**.
-3. Open the Extensions view.
-4. Select **Install Dev Extension** or run `zed: install dev extension` from the Command Palette.
-5. Choose the directory containing the OneNord extension.
+Download the OneNord theme JSON file from this repository.
 
-Once installed, the theme will be available in Zed's theme selector.
+### 2. Locate Your Zed Themes Directory
+
+Place the JSON file in Zed's local themes directory for your operating system.
+
+**Windows**
+
+```text
+%USERPROFILE%\AppData\Roaming\Zed\themes\
+```
+
+**macOS / Linux**
+
+```text
+~/.config/zed/themes/
+```
+
+If the `themes` directory does not exist, create it manually.
+
+### 3. Copy the JSON File
+
+Copy the OneNord JSON file into the appropriate `themes` directory.
+
+For example:
+
+```text
+Zed/
+└── themes/
+    └── OneNord.json
+```
+
+Keep the theme file in JSON format.
+
+### 4. Restart Zed
+
+Restart Zed so it loads the local theme file.
 
 ## Usage
 
 ### Activate OneNord
 
-Open the theme selector using:
+Open the theme selector:
 
 - **Windows/Linux:** `Ctrl + K`, then `Ctrl + T`
 - **macOS:** `Cmd + K`, then `Cmd + T`
 
 Search for **OneNord** and select it to apply the theme.
 
-### Set as Your Default Theme
+### Set OneNord as Your Default Theme
 
-You can also set OneNord as your default theme in Zed's `settings.json`.
+You can also configure OneNord as your default theme in Zed's `settings.json`.
 
-Open Settings using `Ctrl + ,` on Windows/Linux or `Cmd + ,` on macOS, then add or update the following setting:
+Open the Settings file through the Command Palette using `zed: open settings file`, then set the theme:
 
 ```json
 {
   "theme": "OneNord"
 }
 ```
+
+Make sure the theme name matches the name defined in the JSON theme file.
 
 ## Color Philosophy
 
