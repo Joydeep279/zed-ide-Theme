@@ -1,0 +1,7 @@
+id = "onenord"
+name = "OneNord"
+version = "0.1.0"
+schema_version = 1
+authors = ["Joydeep <https://github.com/Joydeep279>"]
+description = "A beautifully crafted, distraction-free theme combining cool Nord tones with expressive pastel syntax colors. Available in Dark and Light variants."
+repository = "https://github.com/Joydeep279/zed-ide-Theme"

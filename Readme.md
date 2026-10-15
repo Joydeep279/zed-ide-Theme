@@ -27,47 +27,52 @@ Designed for developers who appreciate minimalism, consistency, and thoughtful d
 
 ## Installation
 
-OneNord is currently distributed as a local JSON theme file. It is not available as a directly installable Zed extension.
+### Option 1: Install from Zed Extensions (Recommended)
 
-### 1. Download the Theme
+Once published to the Zed Extensions registry:
 
-Download the OneNord theme JSON file from this repository.
+1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+2. Search for `zed: extensions`
+3. Search for **OneNord**
+4. Click **Install**
 
-### 2. Locate Your Zed Themes Directory
+### Option 2: Install as a Dev Extension
 
-Place the JSON file in Zed's local themes directory for your operating system.
+To install directly from a local clone of this repository:
 
-**Windows**
+1. Clone this repository:
 
-```text
-%USERPROFILE%\AppData\Roaming\Zed\themes\
-```
+   ```bash
+   git clone https://github.com/Joydeep279/zed-ide-Theme.git
+   ```
 
-**macOS / Linux**
+2. Open the Command Palette in Zed (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+3. Run `zed: install dev extension`
+4. Select the cloned repository folder
 
-```text
-~/.config/zed/themes/
-```
+Zed will load the extension and make the theme available immediately.
 
-If the `themes` directory does not exist, create it manually.
+### Option 3: Manual Local Theme
 
-### 3. Copy the JSON File
+If you prefer to install the theme file directly without using the extension system:
 
-Copy the OneNord JSON file into the appropriate `themes` directory.
+1. Copy `themes/onenord.json` to Zed's local themes directory:
 
-For example:
+   **Windows**
 
-```text
-Zed/
-└── themes/
-    └── OneNord.json
-```
+   ```text
+   %USERPROFILE%\AppData\Roaming\Zed\themes\
+   ```
 
-Keep the theme file in JSON format.
+   **macOS / Linux**
 
-### 4. Restart Zed
+   ```text
+   ~/.config/zed/themes/
+   ```
 
-Restart Zed so it loads the local theme file.
+   If the `themes` directory does not exist, create it manually.
+
+2. Restart Zed so it loads the local theme file.
 
 ## Usage
 
@@ -104,7 +109,19 @@ Or set a specific variant directly:
 }
 ```
 
-Make sure the theme name matches the name defined in the JSON theme file.
+Make sure the theme name matches the name defined in the theme JSON file.
+
+## Extension Structure
+
+```text
+zed-ide-Theme/
+├── extension.toml         # Extension manifest
+├── themes/
+│   └── onenord.json       # Theme family (Dark + Light)
+├── Readme.md
+├── dark preview.png
+└── light preview.png
+```
 
 ## Color Philosophy
 
